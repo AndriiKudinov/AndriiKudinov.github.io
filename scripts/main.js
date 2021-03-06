@@ -14,8 +14,11 @@ let userButton = document.querySelector('button');
 
 function setUserName() {
     let userName = prompt('Please enter your name.');
+    if(userName === "" || userName === null) {
+        userName = 'Gamer';
+    }
     localStorage.setItem('name', userName);
-    heading.textContent = 'Gacha will ruin our lifus! You are not exception, ' + userName + '.'; 
+    heading.textContent = 'Gacha will ruin our lifus! You are not exception, ' + userName + '.';
 }
 
 if(!localStorage.getItem('name')) {
