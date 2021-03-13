@@ -39,3 +39,8 @@ p, li {
   line-height: 2;
   letter-spacing: 1px;
 }
+
+video {
+  display: block;
+  margin: 0 auto;
+}
