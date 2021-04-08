@@ -11,21 +11,29 @@
     <title>My test page</title>
   </head>
   <body>
-    <h1>Gacha will ruin our lifus! You are not exception, Gamer.</h1>
-    <img src="images/nandayo.jpg" id="nandayo" alt="Genshin mascot abriged">
-    <p>You can click on image btw.</p>
-    <p>We've been:</p>
-        
-        <ul>
-            <li>Tricked,</li>
-            <li>Backstabbed,</li>
-            <li>Quite Possibly, Bamboozled...</li>
-        </ul>
+    <video playsinline autoplay muted loop poster="images/poster.JPG" id="backgroundVideo">
+      <source src="media/fireVideo.webm" type="video/webm">
+      <source src="media/fireVideo.mp4" type="video/mp4">
+    </video>
+    <main>
+      <h1>Gacha will ruin our lifus! You are not exception, Gamer.</h1>
+      <img src="images/nandayo.jpg" id="nandayo" alt="Genshin mascot abriged">
+      <p>You can click on image btw.</p>
+      <p>We've been:</p>
+          
+          <ul>
+              <li>Tricked,</li>
+              <li>Backstabbed,</li>
+              <li>Quite Possibly, Bamboozled...</li>
+          </ul>
 
-    <p>Read the article <a href="https://www.reddit.com/r/StopGaming/comments/8sp2c6/i_have_a_gacha_game_addiction/">"I have a gacha game addiction..."</a> for better understanding.</p>
-    <p>If you still have concerns then use the QR-code below please.</p>
-    <img src="images/the-actual-bamboozle.png" id="bamboozle" alt="The actual bamboozle"/>
-    <button>Change user</button>
+      <p>Read the article <a href="https://www.reddit.com/r/StopGaming/comments/8sp2c6/i_have_a_gacha_game_addiction/">"I have a gacha game addiction..."</a> for better understanding.</p>
+      <p>If you still have concerns then use the QR-code below please.</p>
+      <img src="images/the-actual-bamboozle.png" id="bamboozle" alt="The actual bamboozle"/>
+      <button id="user">Change user</button>
+      <button id="music">Play</button>
+    </main>
+    <audio src="media/campfire.mp3" loop></audio>
     <script src="scripts/main.js"></script>
   </body>
 </html> 
