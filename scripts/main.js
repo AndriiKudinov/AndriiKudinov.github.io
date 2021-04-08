@@ -9,8 +9,24 @@ paimonImage.onclick = function() {
     }
 }   
 
+let userButton = document.querySelector("#user");
+let musicButton = document.querySelector("#music");
 let heading = document.querySelector('h1');
-let userButton = document.querySelector('button');
+let backgroundAudio = document.querySelector("audio");
+
+function doMusic() {
+    if (backgroundAudio.paused) {
+        backgroundAudio.play();
+        musicButton.textContent = 'Pause';
+    } else {
+        backgroundAudio.pause();
+        musicButton.textContent = 'Play';
+    }
+}
+
+musicButton.onclick = function() {
+    doMusic();
+}
 
 function setUserName() {
     let userName = prompt('Please enter your name.');
