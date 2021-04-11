@@ -1,0 +1,67 @@
+html {
+    font-family: 'Kiwi Maru', serif;
+    color: whitesmoke;
+    background-color: black;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 8px solid black;
+    text-shadow: 2px 2px 2px black;
+}
+
+thead th:nth-child(1) {
+    width: 15%;
+}
+
+thead th:nth-child(2) {
+    width: 35%;
+}
+
+thead th:nth-child(3) {
+    width: 25%;
+}
+
+thead th:nth-child(4) {
+    width: 25%;
+}
+
+th, td {
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+}
+
+th {
+    letter-spacing: 2px;
+    border: 5px black;
+    border-style: dashed solid;
+}
+
+td {
+    letter-spacing: 1px;
+    border: 5px black solid;
+    text-align: center;
+}
+
+tbody>tr:nth-child(odd) {
+    background-color: #0F1F28;
+}
+
+tbody>tr:nth-child(even) {
+    background-color: #211325;
+}
+
+thead {
+    background: url(images/th-background-wide.JPG);
+}
+
+caption {
+    letter-spacing: 1px;
+    font-style: italic;
+    padding: 20px;
+    caption-side: bottom;
+    text-align: right;
+    text-shadow: none;
+}
