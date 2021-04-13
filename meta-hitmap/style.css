@@ -1,0 +1,23 @@
+:root {
+    --some-var: pink;
+    --some-var3: black;
+}
+
+.box {
+    width: 50vw;
+    height: 50vh;
+    margin: 25vh auto;
+    background-color: var(--some-var2, var(--some-var, orange));
+    box-shadow: 2px 2px 1px black,
+                4px 4px 1px var(--some-var),
+                6px 6px 1px black;
+    filter: grayscale(60%);
+    filter: blur(10px);
+    filter: hue-rotate(20deg);
+}
+
+h1 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
