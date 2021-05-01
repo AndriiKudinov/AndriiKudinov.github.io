@@ -18,8 +18,18 @@ h1 {
     font-size: 6rem;
 }
 
-h4 {
-    font-size: 3rem;
+h2 {
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+    font-weight: 600;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1, h2 {
+    color: var(--h-color, blue);
 }
 
 a {
@@ -75,6 +85,8 @@ button:active {
 
 .logo {
     font-weight: 700;
+    font-size: 3rem;
+    list-style: 4.4rem;
 }
 
 .logo-first {
@@ -103,6 +115,10 @@ nav a {
 
 header {
     line-height: 4.4rem;
+    padding: 2.5rem 0;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -122,6 +138,7 @@ nav {
 .top {
     background: url(../images/vector-big-opacity.svg), url(../images/background-city.png) repeat-x bottom, url(../images/little-opacity.svg) repeat-x top;
     background-size: contain;
+    height: calc(100vh - 11rem);
 }
 
 .top-left {
@@ -175,4 +192,104 @@ nav {
 
 .top-left-a {
     color: blue;
+}
+
+/* Trust section */
+
+.trust {
+    margin-top: 11rem;
+}
+
+.trust p {
+    grid-column: 1 / 13;
+    margin: 0;
+    color: var(--h-color, blue);
+    text-align: center;
+}
+
+.trust-list {
+    padding: 0;
+    grid-column: 1 / 13;
+    margin: 0 11.5rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Features section */
+
+.features {
+    margin: 16rem 0px 0px 0px;
+}
+
+.features-left {
+    margin-left: -8rem;
+    grid-column: 1 / 7;
+    grid-row: 1;
+    background: url(../images/features-back.svg) no-repeat top left;
+    background-size: auto;
+    background-position: top 14rem left -5rem;
+}
+
+.features-left img {
+    width: 100%;
+    max-width: 57.6rem;
+}
+
+.features-right {
+    grid-row: 1;
+    grid-column: 7 / 11;
+}
+
+.features-h2 {
+    width: 100%;
+    max-width: 30rem;
+}
+
+.features-h2 + p {
+    margin-bottom: 10rem;
+}
+
+.features-list {
+    margin-top: 1rem;
+}
+
+.feature {
+    margin-top: 6rem;
+    align-items: center;
+    display: grid;
+    gap: 6.5rem;
+    grid-template-columns: 5.8rem 27rem;
+}
+
+.features-img {
+    padding: 1.4rem;
+}
+
+.speed {
+    background: url(../images/ellipse-1.png) no-repeat center;
+    background-size: contain;
+}
+
+.speed-h {
+    color: #f55767;
+}
+
+.prototyping {
+    background: url(../images/ellipse-2.png) no-repeat center;
+    background-size: contain;
+}
+
+.prototyping-h {
+    color: #2563ff;
+}
+
+.pen {
+    background: url(../images/ellipse-3.png) no-repeat center;
+    background-size: contain;
+}
+
+.pen-h {
+    color: #40975f;
 }
